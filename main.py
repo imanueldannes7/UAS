@@ -11,12 +11,11 @@ df_json = pd.DataFrame.from_dict(file_json, orient='columns')
 
 st.title("Grafik dan Hasil Produksi Minyak Pada Negara di Dunia")
 st.image("https://tse1.mm.bing.net/th?id=OIP.YUhFLbjzWPiw7YaBz1zXUAHaEK&pid=Api&P=0&w=339&h=191",width=500)
-listnih= []
 listbaru = []
 listnih2 = []
 change_country = []
-for x in listnih(df_xsl['country_code']):
-    if x not in listnih(df_json['alpha-3']):
+for x in list(df_xsl['country_code']):
+    if x not in list(df_json['alpha-3']):
         listbaru.append(x)
 for x in listbaru:
     df_xsl = df_xsl[df_xsl.country_code != x]
