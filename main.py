@@ -11,7 +11,7 @@ df_json = pd.DataFrame.from_dict(file_json, orient='columns')
 
 st.title("Grafik dan Hasil Produksi Minyak Pada Negara di Dunia")
 st.image("https://tse1.mm.bing.net/th?id=OIP.YUhFLbjzWPiw7YaBz1zXUAHaEK&pid=Api&P=0&w=339&h=191",width=500)
-listnih= list[""]
+listnih= []
 listbaru = []
 listnih2 = []
 change_country = []
